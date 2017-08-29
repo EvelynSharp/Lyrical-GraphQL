@@ -7,7 +7,9 @@ import query from '../queries/fetchSongs';
 
 class SongList extends React.Component {
 
-
+  onSongDelete(id) {
+    this.props.mutate({ variables: { id } });
+  }
 
   renderSongs() {
     return this.props.data.songs.map( ({ id, title}) => {
