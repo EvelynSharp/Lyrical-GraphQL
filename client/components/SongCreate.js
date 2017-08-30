@@ -5,7 +5,7 @@ import { Link, hashHistory } from 'react-router';
 import query from '../queries/fetchSongs';
 
 class SongCreate extends React.Component {
-
+  // state = { title: ''}
   constructor(props) {
     super(props);
     this.state={ title: '' };
