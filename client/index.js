@@ -9,7 +9,13 @@ import SongList from './components/SongList';
 import App from './components/App';
 import SongCreate from './components/SongCreate';
 import SongDetail from './components/SongDetail';
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id //o is short for object
+  //takes all data fetched by apollo and run through this func
+  //the result of this func is used to identify that data in apollo store
+  //only works if all ids are unique
+  //we need to provide the id - the graphql id 
+});
 //ApolloClient assume server listens to graphql req on '/graphql'
 //add more config if not using default assumptions
 

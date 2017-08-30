@@ -12,7 +12,7 @@ const SongDetail = (props) => {
     <div>
       <Link to='/'>Back</Link>
       <h3>{song.title}</h3>
-      <LyricList />
+      <LyricList lyrics={song.lyrics}/>
       <LyricCreate songId={props.params.id}/>
     </div>
   )
