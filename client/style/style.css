@@ -2,3 +2,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.material-icons {
+  margin-right: 5px;
+}
+
+.vote-box {
+  display: flex;
+  align-items: center;
+}
